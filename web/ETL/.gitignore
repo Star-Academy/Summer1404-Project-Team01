@@ -13,6 +13,7 @@ yarn-error.log
 
 # IDEs and editors
 .idea/
+web/.idea
 .project
 .classpath
 .c9/
@@ -21,11 +22,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code - Share specific settings
-ETL/.vscode/*
-!ETL/.vscode/settings.json
-!ETL/.vscode/tasks.json
-!ETL/.vscode/launch.json
-!ETL/.vscode/extensions.json
+.vscode
 
 # Miscellaneous
 /.angular/cache
