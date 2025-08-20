@@ -1,1 +1,26 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --primary-color: #08D9D6;
+  --secondary-color: #8D99AE;
+  --success-color: #28a745;
+  --danger-color: #dc3545;
+  --warning-color: #ffc107;
+
+  --background-color: #0B132B;
+  --surface-color: #1C2541;
+  --border-color: #3A506B;
+
+  --text-primary: #EAECEF;
+  --text-secondary: #A8B2C1;
+  --text-on-primary: #1A1A1A;
+}
+
+body {
+  margin: 0;
+  font-family: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-primary);
+}
+
+* {
+  box-sizing: border-box;
+}
