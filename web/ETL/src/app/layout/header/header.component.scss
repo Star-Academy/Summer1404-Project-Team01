@@ -1,0 +1,66 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  white-space: nowrap;
+  border-bottom: 1px solid #223649;
+  padding: 0.75rem 2.5rem;
+
+  &__brand {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #ffffff;
+  }
+
+  &__logo {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  &__title {
+    color: #ffffff;
+    font-size: 1.125rem;
+    font-weight: 700;
+    line-height: 1.25;
+    letter-spacing: -0.015em;
+  }
+
+  &__nav-container {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+    gap: 2rem;
+  }
+
+  &__nav {
+    display: flex;
+    align-items: center;
+    gap: 2.25rem;
+  }
+
+  &__nav-link {
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 1.25rem;
+    text-decoration: none;
+    transition: opacity 0.2s;
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__theme-icon {
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+  }
+}

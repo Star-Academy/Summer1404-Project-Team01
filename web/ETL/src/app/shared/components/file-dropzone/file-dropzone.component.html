@@ -1,0 +1,15 @@
+<input
+  type="file"
+  class="hidden-file-input"
+  hidden
+  (change)="onFileSelected($event)"
+  accept=".csv"
+  #fileInput />
+
+<div class="dropzone">
+  <div class="dropzone__content">
+    <p class="dropzone__text--primary">Drag and drop your CSV file here</p>
+    <p class="dropzone__text--secondary">Or</p>
+  </div>
+  <app-button variant="secondary" (click)="openFilePicker()">Browse Files</app-button>
+</div>

@@ -1,5 +1,6 @@
 import {Component, inject} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import {AuthService} from '../../core/services/auth.service';
 
 @Component({
   selector: 'app-pages',
@@ -10,19 +11,11 @@ import {HttpClient} from '@angular/common/http';
 })
 export class WelcomeComponent {
 
-  private http = inject(HttpClient);
+  private authService = inject(AuthService);
 
-  public login(): void{
-    const backEndLoginUrl = 'http://localhost:8080';
 
-    this.http.get<{ loginUrl: string }>(backEndLoginUrl).subscribe({
-      next:(response) => {
-        window.location.href = response.loginUrl;
-      },
-      error:(err) => {
-        console.error('Could not get login URL from backend', err);
-      }
-    })
+  public login(): void {
+    this.authService.login();
   }
 
 }
