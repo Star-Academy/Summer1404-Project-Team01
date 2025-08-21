@@ -1,0 +1,12 @@
+@use "../../../../styles/mixins" as m;
+
+.form-field {
+  @include m.form-field-base;
+
+
+  &__textarea {
+    @include m.form-input-base;
+    min-height: 9rem;
+
+  }
+}

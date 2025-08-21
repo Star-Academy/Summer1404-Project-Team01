@@ -1,0 +1,41 @@
+@mixin form-field-base {
+  display: flex;
+  flex-direction: column;
+  min-width: 10rem;
+  flex: 1;
+
+  &__label {
+    color: #ffffff;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
+@mixin form-input-base {
+  display: flex;
+  width: 100%;
+  min-width: 0;
+  flex: 1;
+  resize: none;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  color: #ffffff;
+  border: 1px solid #314d68;
+  background-color: #182634;
+  padding: 15px;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+
+  &::placeholder {
+    color: #90adcb;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: none;
+    border-color: #314d68;
+  }
+}

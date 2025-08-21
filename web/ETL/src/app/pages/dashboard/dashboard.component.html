@@ -1,0 +1,29 @@
+<div class="dashboard-container">
+  <div class="dashboard-content">
+
+    <header class="dashboard-header">
+      <div class="dashboard-header__text">
+        <h1 class="dashboard-header__title">Upload CSV File</h1>
+        <p class="dashboard-header__subtitle">
+          Drag and drop your CSV file here or browse to upload. Ensure the file is in CSV format.
+        </p>
+      </div>
+    </header>
+
+    <section class="dashboard-section">
+      <app-file-dropzone (fileSelected)="onFileDropped($event)"></app-file-dropzone>
+    </section>
+
+    <section class="dashboard-section dashboard-section--form">
+      <app-text-input label="Dataset Name" placeholder="Enter dataset name" [(ngModel)]="datasetName"></app-text-input>
+    </section>
+
+    <section class="dashboard-section dashboard-section--form">
+      <app-textarea label="Dataset Description (Optional)" placeholder="Enter dataset description" [(ngModel)]="datasetDescription"></app-textarea>
+    </section>
+
+
+      <app-button variant="primary" class="dashboard-btn" (click)="upload()">Upload</app-button>
+
+  </div>
+</div>
